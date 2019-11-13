@@ -1,4 +1,10 @@
 import React, {useState} from "react";
+import styled from "styled-components";
+
+const FormDiv = styled.div`
+
+
+`
 
 const Form = props => {
     const [member, setMember] = useState({
@@ -21,7 +27,7 @@ const onSubmitFunction = event => {
     })
 }
     return (
-        <div>
+        <FormDiv>
         <form onSubmit ={onSubmitFunction}>
             <label>Name: </label>
             <input 
@@ -46,7 +52,7 @@ const onSubmitFunction = event => {
             />
             <button>Add Team member!</button>
         </form>
-        </div>
+        </FormDiv>
 
     );
 }

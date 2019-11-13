@@ -1,8 +1,17 @@
 import React, {useState} from 'react';
 import Form from "./components/Form";
 import ExampleForm from "./components/ExampleForm";
+import styled from "styled-components";
 import logo from './logo.svg';
 import './App.css';
+
+const MainContain = styled.div`
+  border: 2px solid red;
+  text-align: center;
+  height: 100vh;
+
+`;
+
 
 function App() {
 const [info, setInfo] = useState([
@@ -24,15 +33,12 @@ const addNewMember = member => {
 setInfo([...info, newMember]);
 }
 
-
-
-console.log(info)
   return (
-    <div className="App">
+    <MainContain>
       <h1>Meet the Team!</h1>
       <Form addNewMember={addNewMember}/>
       <ExampleForm exampleInfo ={info}/>
-    </div>
+    </MainContain>
   );
 }
 
