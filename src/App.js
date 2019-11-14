@@ -16,6 +16,7 @@ const H1Style = styled.h1`
   color: white;
   padding: 1% 0;
   border-bottom: 1px solid black;
+  font-family: 'Source Sans Pro', sans-serif;
 `;
 
 

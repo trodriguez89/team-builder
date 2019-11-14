@@ -7,7 +7,7 @@ display: flex;
 flex-direction: column;
 border-bottom: 1px solid black;
 
-`
+`;
 
 const Form = props => {
     const [member, setMember] = useState({
